@@ -1,0 +1,1 @@
+.["phrase"] | split("[ -]"; "") | map(. | gsub("[\\W_]"; "")) | map_values(.[0:1]) | join("") | ascii_upcase
